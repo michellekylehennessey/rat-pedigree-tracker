@@ -1,4 +1,4 @@
-nname: Deploy Vite app to GitHub Pages
+name: Deploy Vite app to GitHub Pages
 
 on:
   push:
@@ -37,7 +37,6 @@ jobs:
       - name: Upload build artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          #  YOU BETTER ONLY ONLY DEPLOY THE BUILT FILES
           path: ./dist
 
   deploy:
